@@ -1,0 +1,23 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "firmware-attestation-mcp",
+    "description": "Firmware Attestation MCP \u2014 hardware trust layer for sovereign AI. Scan firmware, check",
+    "version": "1.0.0",
+    "provider": "MEOK AI Labs",
+    "interfaces": [
+      {
+        "type": "mcp",
+        "transport": "stdio",
+        "package": "firmware-attestation-mcp"
+      }
+    ],
+    "capabilities": [
+      "scan_firmware",
+      "check_ant_signatures",
+      "attest_firmware",
+      "gate_inference",
+      "list_threat_model"
+    ]
+  }
+}

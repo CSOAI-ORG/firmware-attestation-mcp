@@ -1,0 +1,21 @@
+# firmware-attestation-mcp
+
+> Firmware Attestation MCP — hardware trust layer for sovereign AI. Scan firmware, check NSA-ANT-class persistence indicators (BIOS/SMM/HPA/boot-ROM), HMAC-signed firmware attestation, gate AI inference on verified hardware trust.
+
+MCP server by MEOK AI Labs. Framework: fastmcp. Transport: stdio.
+
+## Tools
+- scan_firmware
+- check_ant_signatures
+- attest_firmware
+- gate_inference
+- list_threat_model
+
+## Install
+```
+pip install firmware-attestation-mcp
+```
+
+## Links
+- PyPI: https://pypi.org/project/firmware-attestation-mcp/
+- Docs: https://meok.ai

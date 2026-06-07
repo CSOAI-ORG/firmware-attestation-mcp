@@ -1,0 +1,68 @@
+{
+  "name": "firmware-attestation-mcp",
+  "description": "Firmware Attestation MCP \u2014 hardware trust layer for sovereign AI. Scan firmware, check",
+  "url": "https://proofof.ai/scorecard/firmware-attestation-mcp.html",
+  "version": "1.0.0",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "scan_firmware",
+      "name": "Scan Firmware",
+      "description": "scan_firmware via firmware-attestation-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "check_ant_signatures",
+      "name": "Check Ant Signatures",
+      "description": "check_ant_signatures via firmware-attestation-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "attest_firmware",
+      "name": "Attest Firmware",
+      "description": "attest_firmware via firmware-attestation-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "gate_inference",
+      "name": "Gate Inference",
+      "description": "gate_inference via firmware-attestation-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "list_threat_model",
+      "name": "List Threat Model",
+      "description": "list_threat_model via firmware-attestation-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}

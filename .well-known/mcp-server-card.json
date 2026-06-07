@@ -1,0 +1,28 @@
+{
+  "name": "firmware-attestation-mcp",
+  "title": "Firmware Attestation Mcp",
+  "description": "Firmware Attestation MCP \u2014 hardware trust layer for sovereign AI. Scan firmware, check NSA-ANT-class persistence indicators (BIOS/SMM/HPA/boot-ROM), HMAC-signed firmware attestation, gate AI inference on verified hardware trust.",
+  "version": "1.0.0",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "scan_firmware"
+    },
+    {
+      "name": "check_ant_signatures"
+    },
+    {
+      "name": "attest_firmware"
+    },
+    {
+      "name": "gate_inference"
+    },
+    {
+      "name": "list_threat_model"
+    }
+  ]
+}

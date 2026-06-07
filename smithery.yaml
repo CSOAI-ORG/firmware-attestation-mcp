@@ -1,0 +1,28 @@
+name: firmware-attestation-mcp
+description: 'Firmware Attestation MCP — hardware trust layer for sovereign AI. Scan firmware, check'
+version: 1.0.0
+author: MEOK AI Labs
+homepage: https://proofof.ai
+repository: https://github.com/CSOAI-ORG/firmware-attestation-mcp
+license: MIT
+categories:
+- compliance
+- governance
+tools:
+- name: scan_firmware
+  description: scan firmware
+- name: check_ant_signatures
+  description: check ant signatures
+- name: attest_firmware
+  description: attest firmware
+- name: gate_inference
+  description: gate inference
+- name: list_threat_model
+  description: list threat model
+build:
+  type: python
+  entrypoint: server.py
+  dependencies:
+  - mcp>=1.0.0
+runtime:
+  python: '>=3.10'
