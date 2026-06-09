@@ -1,0 +1,112 @@
+{
+  "name": "Firmware Attestation Mcp",
+  "version": "1.0.0",
+  "url": "https://mcp.meok.ai/firmware-attestation-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "Firmware Attestation MCP — hardware trust layer for sovereign AI. Scan firmware, check NSA-ANT-class persistence indicators (BIOS/SMM/HPA/boot-ROM), HMAC-signed firmware attestation, gate AI inference on verified hardware trust.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "scan_firmware",
+      "name": "Scan Firmware",
+      "description": "Scan Firmware — a tool of the firmware-attestation-mcp MCP.",
+      "tags": [
+        "attestation"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "check_ant_signatures",
+      "name": "Check Ant Signatures",
+      "description": "Check Ant Signatures — a tool of the firmware-attestation-mcp MCP.",
+      "tags": [
+        "attestation"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "attest_firmware",
+      "name": "Attest Firmware",
+      "description": "Attest Firmware — a tool of the firmware-attestation-mcp MCP.",
+      "tags": [
+        "attestation"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "gate_inference",
+      "name": "Gate Inference",
+      "description": "Gate Inference — a tool of the firmware-attestation-mcp MCP.",
+      "tags": [
+        "attestation"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "list_threat_model",
+      "name": "List Threat Model",
+      "description": "List Threat Model — a tool of the firmware-attestation-mcp MCP.",
+      "tags": [
+        "attestation"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "firmware-attestation-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}

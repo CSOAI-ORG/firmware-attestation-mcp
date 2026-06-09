@@ -20,5 +20,5 @@ firmware-attestation-mcp = "server:main"
 Homepage = "https://csoai.org"
 Verify = "https://proofof.ai/api/verify"
 
-[tool.hatchling.build.targets.wheel]
+[tool.hatch.build.targets.wheel]
 include = ["server.py", "__init__.py"]
