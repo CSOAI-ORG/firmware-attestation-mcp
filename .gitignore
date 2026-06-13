@@ -5,3 +5,6 @@ dist/
 build/
 .pytest_cache/
 .deepeval/
+
+# Auto-added during alignment sweep
+pypi-publish-20260609-060323.log
