@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "firmware-attestation-mcp"
-version = "1.0.0"
+version = "1.0.1"
 description = "Firmware Attestation MCP — hardware trust layer for sovereign AI. Scan firmware, check NSA-ANT-class persistence indicators (BIOS/SMM/HPA/boot-ROM), HMAC-signed firmware attestation, gate AI inference on verified hardware trust."
 readme = "README.md"
 requires-python = ">=3.10"
