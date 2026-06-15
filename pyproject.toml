@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "firmware-attestation-mcp"
-version = "1.0.1"
+version = "1.0.2"
 description = "Firmware Attestation MCP — hardware trust layer for sovereign AI. Scan firmware, check NSA-ANT-class persistence indicators (BIOS/SMM/HPA/boot-ROM), HMAC-signed firmware attestation, gate AI inference on verified hardware trust."
 readme = "README.md"
 requires-python = ">=3.10"
@@ -22,3 +22,22 @@ Verify = "https://proofof.ai/api/verify"
 
 [tool.hatch.build.targets.wheel]
 include = ["server.py", "__init__.py"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+
+[tool.ruff]
+line-length = 100
+select = ["E", "F", "W", "I", "N"]
+ignore = ["E501"]
+
+
+[tool.mypy]
+python_version = "3.10"
+strict = true
+warn_return_any = true
+warn_unused_Configs = true
+disallow_untyped_defs = true
+
