@@ -11,7 +11,7 @@ requires-python = ">=3.10"
 license = "MIT"
 authors = [{ name = "MEOK AI Labs / CSOAI", email = "nicholas@csoai.org" }]
 keywords = ["mcp", "firmware", "attestation", "sovereign-ai", "security", "tpm", "secure-boot"]
-dependencies = ["mcp>=1.2.0"]
+dependencies = ["mcp>=2.0.0"]
 
 [project.scripts]
 firmware-attestation-mcp = "server:main"
@@ -21,7 +21,7 @@ Homepage = "https://csoai.org"
 Verify = "https://proofof.ai/api/verify"
 
 [tool.hatch.build.targets.wheel]
-include = ["server.py", "__init__.py"]
+include = ["server.py", "__init__.py", "mcp2026_shim.py"]
 
 [tool.pytest.ini_options]
 asyncio_mode = "auto"
